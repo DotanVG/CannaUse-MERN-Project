@@ -7,7 +7,9 @@
 
     width: 100vw;
     height: 80px;
-    padding: 16px;
+
+    padding-right: 30px;
+    
     background-image: linear-gradient(to right, green, rgb(87, 128, 0), yellow, rgb(255, 217, 0), rgb(255, 30, 0), red);
 }
 
@@ -33,17 +35,16 @@
     cursor: pointer;
 }
 
-.hamburger-btn .bar {
-    width: 100%;
-    height: 2px;
-
-    background-color: #ffffff;
-    border-radius: 5px;
-}
 
 .main-logo {
     border-radius: 40px;
     padding: 5px;
     width :200px;
     max-height: 80px;
+}
+
+.leaf-menu {
+    height: 60px;
+    width:  60px;
+    background-color: none;
 }
