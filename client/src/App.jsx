@@ -16,23 +16,29 @@ function App() {
     <HomePage />
     <Footer />
     </>
-  // <BrowserRouter>
-  //   <AuthContextProvider>
-  //     <Header />
 
-  //     <Routes>
-  //       <Route path="" element={<HomePage />} />
+  
+  /* APP ROUTING STRUCTURE TO BE MODIFIED
 
-  //       <Route path="login" element={<LoginPage />} />
-  //       <Route path="signup" element={<SignupPage />} />
+  <BrowserRouter>
+    <AuthContextProvider>
+      <Header />
 
-  //       <Route path="*" element={<PageNotFound />} />
-  //       </Routes>
+      <Routes>
+        <Route path="" element={<HomePage />} />
 
-  //       <Footer />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="signup" element={<SignupPage />} />
+
+        <Route path="*" element={<PageNotFound />} />
+        </Routes>
+
+        <Footer />
                 
-  //   </AuthContextProvider>
-  // </BrowserRouter>
+    </AuthContextProvider>
+  </BrowserRouter>
+  */
+
   );
 }
 
