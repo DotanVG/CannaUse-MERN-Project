@@ -10,6 +10,6 @@
     height: 50px;
 
     background-color: #ff0000;
-    background-image: linear-gradient(to right, green, rgb(87, 128, 0), yellow, rgb(255, 217, 0), rgb(255, 30, 0), red);
+    background-image: linear-gradient(to bottom, green, rgb(87, 128, 0), yellow, rgb(255, 217, 0), rgb(255, 30, 0), red);
     color: #001702;
 }
