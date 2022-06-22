@@ -1,10 +1,13 @@
 import './home-page.styles.css'
 import React from 'react'
-import Background from '../../components/shared/background/Background.component';
 
 const HomePage = () => {
     return (
-    <Background />
+        <main>
+            <div className='home-page'>
+                <h1>Home Page</h1>
+            </div>
+        </main>
     
     )
 }
