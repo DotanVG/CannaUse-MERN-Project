@@ -1,5 +1,5 @@
 import './signup-page.styles.css';
-import Card from '../../components/Card.component';
+import Card from '../../components/card/Card.component';
 import SignupForm from './signup-form/SignupForm.component';
 
 import React from 'react';
