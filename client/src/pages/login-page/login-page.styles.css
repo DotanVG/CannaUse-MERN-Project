@@ -1,4 +1,4 @@
-.home-page {
+.login-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,8 +6,12 @@
     background-image: url('../../images/background.jpg');
     background-size: cover;             
     background-position: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
     
     width: 100vw;
     min-height: calc(100vh - 130px);
+}
+
+.login-page-card {
+    height: 420px;
 }
