@@ -1,5 +1,5 @@
 .loader-container {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     z-index: 100;
@@ -9,7 +9,7 @@
     align-items: center;
 
     width: 100vw;
-    height: 100vh;
+    min-height: calc(100vh - 130px);
 
     background-image: url('../../../images/background.jpg');
     background-size: cover;             
