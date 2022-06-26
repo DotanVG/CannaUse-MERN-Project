@@ -15,7 +15,7 @@ import FormInputContainer from '../../../components/form/form-input-container/Fo
 const API_URL = environments.API_URL;
 
 const LoginForm = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const authContextValue = useContext(AuthContext);
 
@@ -79,29 +79,29 @@ const LoginForm = () => {
             password: loginFormValues.password,
         };
 
-        // try {
-        //     const response = await fetch(`${API_URL}/users/login`, {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-        //         body: JSON.stringify(data),
-        //     });
+        try {
+            const response = await fetch(`${API_URL}/users/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
 
-        //     if (!response.ok) {
-        //         throw new Error();
-        //     }
+            if (!response.ok) {
+                throw new Error();
+            }
 
-        //     const responseData = await response.json();
-        //     const token = responseData.data.token;
+            const responseData = await response.json();
+            const token = responseData.data.token;
 
-        //     localStorage.setItem('user-token', token);
-        //     authContextValue.setUserToken(token);
+            localStorage.setItem('user-token', token);
+            authContextValue.setUserToken(token);
 
-        //     navigate('/');
-        // } catch (err) {
-        //     alert('Something went wrong!');
-        // }
+            navigate('/');
+        } catch (err) {
+            alert('Something went wrong!');
+        }
     };
 
     return (
@@ -128,9 +128,9 @@ const LoginForm = () => {
                 />
             </div>
 
-            {/* <Link to="/signup" className="signup-link">
+            <Link to="/signup" className="signup-link">
                 Don't have an account? Signup...
-            </Link> */}
+            </Link>
 
             <button type="submit">Login</button>
         </form>

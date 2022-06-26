@@ -5,24 +5,26 @@ import './page-not-found.styles.css';
 import Loader from '../../components/shared/loader/Loader.component';
 
 const PageNotFound = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setIsLoading(false);
-    //     }, 2000);
-    // }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+    }, []);
 
-    // const handleRedirectHome = () => navigate('/');
+    const handleRedirectHome = () => navigate('/');
 
-    return(
+    return isLoading ? (
+        <Loader />
+    ) : (
         <main className="page-not-found">
             <h1>404</h1>
             <h2>Page Not Found</h2>
 
-            <button type="button" /* onClick={handleRedirectHome} */>
+            <button type="button" onClick={handleRedirectHome} >
                 Go Back Home
             </button>
         </main>

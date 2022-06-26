@@ -13,7 +13,7 @@ import { AuthContext } from '../../../contexts/Auth.context';
 const API_URL = environments.API_URL;
 
 const SignupForm = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const authContextValue = useContext(AuthContext);
     
@@ -85,7 +85,7 @@ const SignupForm = () => {
                 signupFormActions.updatedPasswordAction(
                     passwordInput,
                     false,
-                    'You must enter a password with at least 8 characters which includes one captial letter, number and specail character'
+                    'You must enter a password with at least 8 characters which includes at least 1 captial letter, 1 lowercase letter, a number and a special character'
                 )
             );
 
@@ -150,7 +150,32 @@ const SignupForm = () => {
             email: signupFormValues.email,
             password: signupFormValues.password,
         };   
-    } 
+    
+
+    try {
+        const response = await fetch(`${API_URL}/users/signup`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (response.status !== 201) {
+            throw new Error();
+        }
+
+        const responseData = await response.json();
+        const token = responseData.data.token;
+
+        localStorage.setItem('user-token', token);
+        authContextValue.setUserToken(token);
+
+        navigate('/');
+    } catch (err) {
+        alert('Something went wrong!');
+    }
+};
 
     return (
         <form className="signup-form"  onSubmit={handleSubmit}>
@@ -205,9 +230,9 @@ const SignupForm = () => {
                 
             </div>
 
-            {/* <Link to="/login" className="login-link">
+            <Link to="/login" className="login-link">
                 Have an account already? Login...
-            </Link> */}
+            </Link>
 
             <button type="submit">Signup</button>
         </form>
