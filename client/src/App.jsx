@@ -7,6 +7,7 @@ import Footer from "./components/shared/footer/Footer.component";
 import HomePage from "./pages/home-page/HomePage.component";
 import SignupPage from "./pages/signup-page/SignupPage.component";
 import LoginPage from "./pages/login-page/LoginPage.component";
+import AboutPage from "./pages/about-page/AboutPage.component";
 import PageNotFound from "./pages/page-not-found/PageNotFound.component";
 
 
@@ -21,6 +22,7 @@ function App() {
 
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignupPage />} />
+          <Route path="about" element={<AboutPage />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>

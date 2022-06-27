@@ -53,6 +53,12 @@ const Sidebar = (props) => {
                         </Link>
                     </li>
 
+                    <li className="sidebar-item">
+                        <Link to="/about" onClick={props.hideSidebar}>
+                            About
+                        </Link>
+                    </li>
+
                     {!authContextValue.userToken && (
                         <li className="sidebar-item">
                             <Link to="/login" onClick={props.hideSidebar}>

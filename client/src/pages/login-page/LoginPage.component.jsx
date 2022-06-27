@@ -12,8 +12,6 @@ const LoginPage = () => {
 
     const authContextValue = useContext(AuthContext);
 
-    
-
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
