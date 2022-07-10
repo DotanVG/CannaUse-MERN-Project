@@ -17,7 +17,8 @@ app.use(userRouter);
 
 
 const PORT = enviroments.PORT;
-app.listen(PORT, async () => {
+
+app.listen(process.env.PORT || 3000, async () => {
   console.log(`Server is running on PORT: ${PORT}`);
 
   await connectToMongoDB();
