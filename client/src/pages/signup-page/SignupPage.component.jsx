@@ -29,9 +29,8 @@ const SignupPage = () => {
         <Loader />
     ) : (
         <main className="signup-page">
+            <h1>Hello New User!</h1>
             <Card className="signup-page-card">
-                <h1>Hello New User!</h1>
-
                 <SignupForm />
             </Card>
         </main>

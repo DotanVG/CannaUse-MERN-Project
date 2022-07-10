@@ -6,16 +6,32 @@
     background-size: cover;             
     background-position: center;
     background-repeat: no-repeat;  
+    flex-direction: column;
     
     width: 100vw;
     min-height: calc(100vh - 130px);
 
     color: limegreen;
     text-align: center;
+    font-size: 25px;
 }
 
 .bottom-button {
-    position: absolute;
-    bottom: 60px;
+    position: relative;
+    bottom: 10px;
     width: 100%;
+}
+
+h1 {
+    position: relative;
+}
+
+.paragraph {
+    margin: 6px;
+}
+
+.about-card {
+    
+    position: relative;
+    
 }

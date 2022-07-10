@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     background-image: url('../../images/background.jpg');
     background-size: cover;             
@@ -13,5 +14,7 @@
 }
 
 .login-page-card {
+    position: relative;
     height: 420px;
+    text-shadow: 3px 3px black;
 }

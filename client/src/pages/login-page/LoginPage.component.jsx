@@ -28,9 +28,8 @@ const LoginPage = () => {
         <Loader />
     ) : (
         <main className="login-page">
+            <h1>Welcome Back!</h1>
             <Card className="login-page-card">
-                <h1>Welcome Back!</h1>
-
                 <LoginForm />
             </Card>
         </main>

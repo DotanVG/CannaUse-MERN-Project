@@ -53,6 +53,14 @@ const Sidebar = (props) => {
                         </Link>
                     </li>
 
+                    {authContextValue.userToken && (
+                        <li className="sidebar-item">
+                            <Link to="/my-strains" onClick={props.hideSidebar}>
+                                My Strains Tracker
+                            </Link>
+                        </li>
+                    )}
+                    
                     <li className="sidebar-item">
                         <Link to="/about" onClick={props.hideSidebar}>
                             About

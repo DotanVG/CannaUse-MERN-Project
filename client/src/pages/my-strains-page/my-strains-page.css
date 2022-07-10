@@ -1,0 +1,55 @@
+.strains-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    background-image: url('../../images/background.jpg');
+    background-position: center;
+    width: 100vw;
+    min-height: calc(100vh - 130px);
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid rgba(255, 255, 255, 0.052);
+    text-align: center;
+    padding: 8px;
+    font-size: 32px;
+}
+
+th {
+    background-color:rgba(255, 255, 255, 0.079);
+    -webkit-text-stroke: 1.2px black;
+    color: white;
+    font-weight: 1000;
+}
+
+td {
+    background-color:rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+}
+
+form {
+    display: flex;
+    gap: 5px;
+}
+
+form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form * {
+    font-size: 14px;
+    
+}
+
+h3 {
+    color: rgb(0, 255, 0);
+    
+}

@@ -43,7 +43,17 @@ const HomePage = () => {
 
                 {authContextValue.userToken && (
                     <div className='dashboard-card'>
-                        <h1>Dashboard</h1>
+                        <h1>Hello User!</h1>
+                        <h2>What would you like to do?</h2>
+                        <div className='buttons-container'>
+                            <Link to='/about'>
+                                <button class="button-82-pushable">   <span class="button-82-shadow"></span>   <span class="button-82-edge"></span>   <span class="button-82-front text">     About CannaUse   </span> </button>
+                            </Link>
+                            <Link to='/my-strains'>
+                                <button class="button-82-pushable">   <span class="button-82-shadow"></span>   <span class="button-82-edge"></span>   <span class="button-82-front text">     Go To BudTracker   </span> </button>
+                            </Link>
+                                <button class="button-82-pushable">   <span class="button-82-shadow"></span>   <span class="button-82-edge"></span>   <span class="button-82-front text">     Research   </span> </button>
+                        </div>
                     </div>
                 )}
                     

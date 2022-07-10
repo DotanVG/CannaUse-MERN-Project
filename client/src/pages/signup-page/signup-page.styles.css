@@ -1,12 +1,13 @@
 .signup-page {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: transparent;
     background-image: url('../../images/background.jpg');
     background-size: cover;             
     background-position: center;
     background-repeat: no-repeat;  
+    flex-direction: column;
 
     width: 100vw;
     min-height: calc(100vh - 130px);
@@ -14,4 +15,10 @@
 
 .signup-page-card {
     height: 700px;
+}
+
+h1 {
+    position: relative;
+    text-shadow: 3px 3px black;
+    color: limegreen;
 }

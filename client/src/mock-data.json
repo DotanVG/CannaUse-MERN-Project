@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "strainName": "SAPPHIRE OG - תפרחת ספאייר או ג'י",
+        "company": "CANNARAVA - קאנערבה",
+        "strainType": "Hybrid",
+        "dosage": "T20/C4",
+        "batchNumber": "FT010222",
+        "painTreatment": "7",
+        "emotionalTreatment": "8",
+        "timeOfDay": "Afternoon-Night",
+        "comments": "Helps Focusing, High Functioning"        
+    },
+    {
+        "id": 2,
+        "strainName": "Brownizz - תפרחת בראוניזז",
+        "company": "Seach - שיח",
+        "strainType": "Indica",
+        "dosage": "T20/C4",
+        "batchNumber": "220137010",
+        "painTreatment": "5",
+        "emotionalTreatment": "9",
+        "timeOfDay": "Night-Time",
+        "comments": "Very Potent"        
+    },
+    {
+        "id": 3,
+        "strainName": "SHOHAM - תפרחת שוהם",
+        "company": "BOL Pharma -  בול פארמה ",
+        "strainType": "Indica",
+        "dosage": "T10/C2",
+        "batchNumber": "220028010",
+        "painTreatment": "2",
+        "emotionalTreatment": "3",
+        "timeOfDay": "Day-Time",
+        "comments": "Strong And Special Smell"        
+    },
+    {
+        "id": 4,
+        "strainName": "BCANN TOP INDICA Oil - שמן ביקאן טופ אינדיקה",
+        "company": "Bazelet - בזלת",
+        "strainType": "Indica",
+        "dosage": "T10/C2",
+        "batchNumber": "220014010",
+        "painTreatment": "3",
+        "emotionalTreatment": "1",
+        "timeOfDay": "Day-Time",
+        "comments": "Effective Treatment Drops=>4"        
+    },
+    {
+        "id": 5,
+        "strainName": "",
+        "company": "",
+        "strainType": "",
+        "dosage": "",
+        "batchNumber": "",
+        "painTreatment": "",
+        "emotionalTreatment": "",
+        "timeOfDay": "",
+        "comments": ""        
+    }
+]
