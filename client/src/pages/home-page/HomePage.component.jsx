@@ -47,12 +47,12 @@ const HomePage = () => {
                         <h2>What would you like to do?</h2>
                         <div className='buttons-container'>
                             <Link to='/about'>
-                                <button class="button-82-pushable">   <span class="button-82-shadow"></span>   <span class="button-82-edge"></span>   <span class="button-82-front text">     About CannaUse   </span> </button>
+                                <button className="button-82-pushable">   <span className="button-82-shadow"></span>   <span className="button-82-edge"></span>   <span className="button-82-front text">     About CannaUse   </span> </button>
                             </Link>
                             <Link to='/my-strains'>
-                                <button class="button-82-pushable">   <span class="button-82-shadow"></span>   <span class="button-82-edge"></span>   <span class="button-82-front text">     Go To BudTracker   </span> </button>
+                                <button className="button-82-pushable">   <span className="button-82-shadow"></span>   <span className="button-82-edge"></span>   <span className="button-82-front text">     Go To BudTracker   </span> </button>
                             </Link>
-                                <button class="button-82-pushable">   <span class="button-82-shadow"></span>   <span class="button-82-edge"></span>   <span class="button-82-front text">     Research   </span> </button>
+                                <button className="button-82-pushable">   <span className="button-82-shadow"></span>   <span className="button-82-edge"></span>   <span className="button-82-front text">     Research   </span> </button>
                         </div>
                     </div>
                 )}
