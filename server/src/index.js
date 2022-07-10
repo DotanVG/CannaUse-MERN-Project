@@ -5,8 +5,7 @@ import userRouter from './routers/user.router.js';
 import connectToMongoDB from './databases/mongoose.db.js';
 import cors from 'cors';
 
-// dotenv.config();
-if (process.env.NODE_ENV !== 'production') require('dotenv').config()
+dotenv.config();
 
 const app = express();
 
