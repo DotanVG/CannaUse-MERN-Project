@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "main": "",
     "scripts": {
+        "devStart": "cd server && npm run devStart && cd ../ && cd client && npm run start",
         "start": "npm start --prefix server",
         "install-client": "cd client && npm install && npm run build && cd ..",
         "install-server": "cd server && npm install && cd .. ",
